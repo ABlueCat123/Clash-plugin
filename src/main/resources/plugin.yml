@@ -1,0 +1,21 @@
+name: Clash
+version: '${project.version}'
+main: com.github.abluecat123.clash.Clash
+api-version: 1.16
+authors: [ ABlueCat ]
+softdepend:
+  - Vault
+  - PlaceholderAPI
+commands:
+  clash:
+    aliases:
+      - cl
+permissions:
+  clash.help:
+    default: true
+  clash.open:
+    default: true
+  clash.reload:
+    default: op
+  clash.ophelp:
+    default: op

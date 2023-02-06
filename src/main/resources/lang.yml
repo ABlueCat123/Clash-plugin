@@ -1,0 +1,49 @@
+lang:
+  execute_command_denied: "&c你没有执行此命令的权限。"
+  command_enter_error: "&c命令输入错误！请输入/clash help查看帮助"
+  reload_completed: "&a插件重载完成"
+  console_are_not_allowed_to_perform_this_command: "控制台不得执行此指令"
+  this_world_has_been_banned: "&c这个世界禁止使用决斗功能"
+  the_target_is_offline: "&c目标已经下线！"
+  money_is_not_enough_to_pay: "&c你的金钱数没达到目标身价，无法发起决斗！"
+  you_cant_clash_yourself: "&c你不能对你自己发起决斗！"
+  clash_main_title_for_sender: "你即将对%player_name%发起决斗！"        # 注意：以下两行的PAPI的所属者为目标，%countdown%不是PAPI变量。
+  clash_subtitle_for_sender: "还有%countdown%秒准备传送，请做好准备！"
+  clash_main_title_for_target: "%player_name%对你发起了决斗！"         # 注意：以下两行的PAPI的所属者为发起决斗者，%countdown%不是PAPI变量。
+  clash_subtitle_for_target: "敌方还有%countdown%秒到达战场，请做好准备！"
+  target_is_in_banned_world: "&c目标在禁止决斗世界。"
+  prepare_teleport: "&6准备传送..."
+  enemy_has_been_teleported: "&6敌人已传送..."
+  bossbar_title: "&c你和你的敌人的距离是：%clash_distance%" # %clash_distance%不是PAPI变量。
+  clash_win_message: "&a恭喜你获得了此次决斗的胜利！你获得了%clash_money_change%金币"
+  clash_lose_message: "&a很遗憾，你在这次决斗中被击败了。你失去了%clash_money_change%金币"
+  newbie_not_allowed_to_clash: "&c你目前入服不到4小时，无法发起决斗或被决斗。距离保护结束还有%clash_protection_time%秒"
+  newbie_not_allowed_to_be_clashed: "&c目标目前入服不到4小时，无法被决斗。距离保护结束还有%clash_protection_time%秒"
+  difference_is_too_big: "&c你与目标的游玩时间相差%clash_different_time%秒，差距过大，无法发起决斗"
+  player_use_banned_command_in_fight: "&c你处于决斗过程中，不得使用此命令！"
+  player_use_banned_item_in_fight: "&c你处于决斗过程中，不得使用此物品！"
+  target_is_not_existed: "目标不在线或不存在！无法发起决斗"
+
+# GUI的配置文件下各项支持PAPI变量，与头颅相关的PAPI变量为头颅主人。
+# 在且只在skull_lore和confirm_lore里额外支持一个变量（非PAPI变量）%clash_price%，表示身价
+gui:
+  clash_screen_title: "决斗界面"
+  skull_title: "&a&l%player_name%"
+  skull_lore:
+    - "&a&l他的游戏币总金额为：%vault_eco_balance%"
+    - "&b&l他的身价为：%clash_price%"
+    - "&c点击我预支%clash_price%游戏币对他发起决斗！"
+  confirm_screen_title: "确认界面"
+  confirm_item_title: "确认"
+  confirm_lore:
+    - "&c点此确认预支%clash_price%的游戏币进行决斗！"
+  turn_page_left: "上一页"
+  turn_page_right: "下一页"
+
+help:
+  regularhelp:
+    - "&a============&b追杀插件帮助&a==========="
+    - "&3 /clash open  &a打开追杀名单GUI"
+    - "&3 /clash help  &a显示此帮助文档"
+  ophelp:
+    - "&3 /clash reload  &a重载此插件"

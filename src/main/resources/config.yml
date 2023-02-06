@@ -1,0 +1,20 @@
+teleport_radius: 20 #传送半径
+price_rate: 0.05 # 一个人的身价占其总钱数的百分比
+award_rate: 0.6 # 获胜方所获得的金钱数占所支付身价的百分比，其他归服务器所有。不建议超过1
+countdown_time: 5 # 追杀时的传送冷却，这段时间将循环title播放追杀提示。单位：秒
+clash_total_time: 60 # 追杀过程总用时，超时则判追杀者失败。单位：秒
+newbie_protection:
+  enable: true
+  protect_time: 14400   # 是否启用新手保护，单位：秒
+difference_protection:
+  enable: true
+  different_time: 36000 # 单位：秒
+banned_command_in_fight:
+  - "home"
+  - "spawn"
+  - "tpa"
+  - "tp"
+banned_item_material_in_fight:
+  - "CLOCK"
+disabled_world:
+  - "1234"
