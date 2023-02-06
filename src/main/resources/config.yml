@@ -8,13 +8,13 @@ newbie_protection:
   protect_time: 14400   # 是否启用新手保护，单位：秒
 difference_protection:
   enable: true
-  different_time: 36000 # 单位：秒
-banned_command_in_fight:
+  different_time: 36000 # 是否启用在服时间差距保护，单位：秒
+banned_command_in_fight:  # 战斗中禁止使用的命令
   - "home"
   - "spawn"
   - "tpa"
   - "tp"
-banned_item_material_in_fight:
+banned_item_material_in_fight:   # 战斗中禁止使用的物品
   - "CLOCK"
-disabled_world:
+disabled_world:   # 设置不在哪些世界启用
   - "1234"
